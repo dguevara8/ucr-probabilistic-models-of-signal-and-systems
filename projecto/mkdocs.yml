@@ -1,0 +1,82 @@
+site_name: Proyecto de Programación de Modelos Probabilísticos
+
+nav:
+  - Inicio: index.md
+  - Recolección de datos: recolecciondatos.md
+  - Distribución: distribucion.md
+  - Estacionalidad en sentido amplio y ergodicidad: estacionalidad_ergodicidad.md
+  - Potencia promedio: potencia.md
+
+theme: 
+  name: material
+  language: es
+  palette:
+    primary: red
+  logo: img/plot.png
+  favicon: img/plot.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.tooltips
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - md_in_html
+  - footnotes
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition  # Para las notas como !!! note
+  - codehilite  # Para resaltar código
+  - footnotes   # Para notas al pie
+  - meta        # Para metadatos en las páginas
+  - toc         # Para generar tablas de contenido
+
+plugins:
+  - search      # Habilita la búsqueda en tu sitio
+  - markdownextradata  # Para insertar variables en Markdown
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
